@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_0uwvy"]
 [ext_resource type="PackedScene" uid="uid://oq2cn6e7wr7c" path="res://scenes/tile_map.tscn" id="2_yokp3"]
-[ext_resource type="PackedScene" uid="uid://o7xe2x8hw55k" path="res://scenes/player.tscn" id="3_0c78a"]
+[ext_resource type="PackedScene" uid="uid://bkwpm7y511rcp" path="res://scenes/entities/player/Player.tscn" id="3_8suqd"]
 [ext_resource type="PackedScene" uid="uid://2kxb2utxag7x" path="res://scenes/platform.tscn" id="4_kbag6"]
 [ext_resource type="PackedScene" uid="uid://cifit2frbmvsf" path="res://scenes/killzone.tscn" id="5_fx3q4"]
 [ext_resource type="PackedScene" uid="uid://uvj61l4rmkd2" path="res://scenes/coin.tscn" id="6_btlck"]
@@ -69,11 +69,10 @@ debug_color = Color(0.85689, 0.00620174, 0.88188, 0.42)
 unique_name_in_owner = true
 script = ExtResource("1_0uwvy")
 
+[node name="Player" parent="." instance=ExtResource("3_8suqd")]
+
 [node name="TileMap" parent="." instance=ExtResource("2_yokp3")]
 layer_1/tile_data = PackedInt32Array(196602, 0, 0, 196603, 0, 0, 196604, 0, 0, 196605, 0, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0)
-
-[node name="Player" parent="." instance=ExtResource("3_0c78a")]
-position = Vector2(-1, 7)
 
 [node name="Platform" parent="." instance=ExtResource("4_kbag6")]
 position = Vector2(146, 37)
