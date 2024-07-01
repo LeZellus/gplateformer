@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://pi0d8nkghtsv"]
+
+[ext_resource type="PackedScene" uid="uid://o7xe2x8hw55k" path="res://scenes/player.tscn" id="1_3lbxw"]
+[ext_resource type="PackedScene" uid="uid://t60cgba2jtop" path="res://scenes/tile_map2.tscn" id="2_2mnx2"]
+
+[node name="level_3" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_3lbxw")]
+position = Vector2(-97, 15)
+
+[node name="TileMap" parent="." instance=ExtResource("2_2mnx2")]
+layer_1/tile_data = PackedInt32Array(-15, 262144, 0, -14, 262144, 0, -13, 262144, 0, -12, 262144, 0, -11, 262144, 0, -10, 262144, 0, -9, 262144, 0, -8, 262144, 0, -7, 262144, 0, -6, 262144, 0, -5, 262144, 0, -4, 262144, 0, -3, 262144, 0, -2, 262144, 0, -1, 262144, 0, -65536, 262144, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1)
+zoom = Vector2(4, 4)
